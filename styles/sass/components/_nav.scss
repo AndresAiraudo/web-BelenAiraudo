@@ -1,0 +1,94 @@
+header {
+    @include container;
+}
+
+.nav{
+    background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(27,27,27,0.7987570028011204) 0%);
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid $principal_color;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin-right: 80px;
+    align-items: center;
+
+    .nav-link {
+        @include style-2;
+        display: flex;
+        margin: 0 20px;
+        padding: 15px 0 15px 0;
+        text-decoration: none;
+        width: max-content;
+        justify-content: center;
+        &:hover {
+            //color: $principal_color;
+            border-bottom: 3px solid $principal_color;
+            transition: 0.1s;
+        }
+    }
+}
+
+.nav-logo{
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-text{
+    @include style-5;
+    text-decoration: none;
+    &:hover{
+        color: $principal_color;
+    }
+}
+
+#carousel-1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: .7;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $light-gray;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+
+  .carousel-indicators .active {
+    background-color: $principal_color;
+  }
+
+
+    #perfil-img{
+        position: relative;
+        z-index: 2;
+        top: 30%;
+        left: 5%;
+        max-height: 400px;
+        border: 3px solid $principal_color;
+        border-radius: 30px;
+    }
+
+    #presentation{
+        width: 50%;
+        height: 200px;
+        position: relative;
+        z-index: 2;
+        left: 40%;
+        right: 10%;
+        top: -10%;
+        @include style-4;
+        background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(27,27,27,0.6867121848739496) 0%);
+        border: 3px solid $principal_color;
+        border-radius: 30px;
+        padding: 0 5% 5% 5%;
+    }

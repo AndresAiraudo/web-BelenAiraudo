@@ -1,0 +1,21 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch-dev": "sass --watch -c --style=expanded --no-source-map styles/sass/index.scss:styles/css/index.css",
+    "sass-compile-dev": "sass -c --style=expanded --no-source-map styles/sass/index.scss:styles/css/index.css",
+    "sass-compile-prod": "sass --style=compressed styles/sass/index.scss:styles/css/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

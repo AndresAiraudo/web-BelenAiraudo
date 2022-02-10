@@ -1,5 +1,9 @@
 header {
     @include container;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .nav{
@@ -54,41 +58,78 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    opacity: .7;
+    height: 100%;
 }
 
 .carousel-indicators [data-bs-target] {
     background-color: $light-gray;
     opacity: 1;
     transition: opacity 1s ease;
+}
+
+.carousel-indicators .active {
+  background-color: $principal_color;
+}
+
+  .carousel-inner{
+      height: 100%;
+      width: 100%;
+      .one{
+          opacity: .7;
+          width: 100%;
+          height: 100%;
+          background-image: url(../../../assets/img/Fotos-Ainhoa/6bf01509-dcf0-4628-9519-0afb5705cb7e_rw_3840.jpg);
+          background-size: cover;
+      }
+      .two{
+            opacity: .7;
+            width: 100%;
+            height: 100%;
+            background-image: url(../../../assets/img/Fotos-local-de-ropa/cut.jpg);
+            background-size: cover;
+      }        
+      .three{
+            opacity: .7;
+            width: 100%;
+            height: 100%;
+            background-image: url(../../../assets/img/Identidad-visual-Kiara/67d875c3-c646-429a-a62f-b7716b4bca46.png);
+            background-size: cover;
+        }
   }
 
-  .carousel-indicators .active {
-    background-color: $principal_color;
-  }
 
 
     #perfil-img{
+        margin: 0;
+        padding: 0;
         position: relative;
         z-index: 2;
-        top: 30%;
-        left: 5%;
-        max-height: 400px;
+        width: 30%;
+        max-width: 350px;
+        height: auto;
         border: 3px solid $principal_color;
         border-radius: 30px;
     }
 
-    #presentation{
+   #presentation{
         width: 50%;
-        height: 200px;
+        height: auto;
+        margin: 0;
         position: relative;
         z-index: 2;
-        left: 40%;
-        right: 10%;
-        top: -10%;
-        @include style-4;
-        background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(27,27,27,0.6867121848739496) 0%);
+        padding: 3% 5% 3% 5%;
         border: 3px solid $principal_color;
         border-radius: 30px;
-        padding: 0 5% 5% 5%;
+        background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(27,27,27,0.7987570028011204) 0%);
+        h1{
+            @include style-4;
+            font-size: 4.5vw;
+            text-decoration: underline;
+            text-decoration-color: $principal_color;
+            text-decoration-style: solid;
+        }
+        li{
+            @include style-3;
+            font-size: 2.5vw;
+        }
     }

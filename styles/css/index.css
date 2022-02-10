@@ -11125,6 +11125,10 @@ header {
   max-width: 2000px;
   height: 768px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .nav {
@@ -11189,7 +11193,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  opacity: 0.7;
+  height: 100%;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -11202,24 +11206,56 @@ header {
   background-color: #FF86C1;
 }
 
+.carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner .one {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../assets/img/Fotos-Ainhoa/6bf01509-dcf0-4628-9519-0afb5705cb7e_rw_3840.jpg);
+  background-size: cover;
+}
+.carousel-inner .two {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../assets/img/Fotos-local-de-ropa/cut.jpg);
+  background-size: cover;
+}
+.carousel-inner .three {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../assets/img/Identidad-visual-Kiara/67d875c3-c646-429a-a62f-b7716b4bca46.png);
+  background-size: cover;
+}
+
 #perfil-img {
+  margin: 0;
+  padding: 0;
   position: relative;
   z-index: 2;
-  top: 30%;
-  left: 5%;
-  max-height: 400px;
+  width: 30%;
+  max-width: 350px;
+  height: auto;
   border: 3px solid #FF86C1;
   border-radius: 30px;
 }
 
 #presentation {
   width: 50%;
-  height: 200px;
+  height: auto;
+  margin: 0;
   position: relative;
   z-index: 2;
-  left: 40%;
-  right: 10%;
-  top: -10%;
+  padding: 3% 5% 3% 5%;
+  border: 3px solid #FF86C1;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #fafafa 0%, rgba(27, 27, 27, 0.7987570028) 0%);
+}
+#presentation h1, #presentation .h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600px;
@@ -11227,8 +11263,18 @@ header {
   line-height: 48px;
   letter-spacing: 0.67px;
   color: #FFFFFF;
-  background: linear-gradient(90deg, #fafafa 0%, rgba(27, 27, 27, 0.6867121849) 0%);
-  border: 3px solid #FF86C1;
-  border-radius: 30px;
-  padding: 0 5% 5% 5%;
+  font-size: 4.5vw;
+  text-decoration: underline;
+  text-decoration-color: #FF86C1;
+  text-decoration-style: solid;
+}
+#presentation li {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 39px;
+  line-height: 45px;
+  letter-spacing: 0.55px;
+  color: #FFFFFF;
+  font-size: 2.5vw;
 }

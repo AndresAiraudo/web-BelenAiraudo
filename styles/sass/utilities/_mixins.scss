@@ -39,7 +39,7 @@
     font-family:$poppins;
     font-style: $fs-normal;
     font-weight: $fw-600;
-    font-size: $fsz-48;
+    font-size: $fsz-100;
     line-height: $line-s-48;
     letter-spacing: $ls-0-67;
     color: $white;
@@ -58,7 +58,9 @@
 @mixin btn-style {
     width: 144px;
     height: 48px;
-    background: #E0752F 0% 0% no-repeat padding-box;
+    background: $white 0% 0% no-repeat padding-box;
     border-radius: 25px;
-    border: none;
+    border: 0px solid $principal_color;
+    box-shadow: 4px 4px 0px $principal_color;
+    transition: .25s;
 }

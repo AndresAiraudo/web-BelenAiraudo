@@ -11120,10 +11120,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
 header {
   width: 100%;
   max-width: 2000px;
@@ -11143,7 +11139,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-bottom: 1px solid #FF86C1;
 }
 
@@ -11163,7 +11159,7 @@ header {
   color: #FFFFFF;
   display: flex;
   margin: 0 20px;
-  padding: 15px 0 15px 0;
+  padding: 15px 0 10px 0;
   text-decoration: none;
   width: max-content;
   justify-content: center;
@@ -11265,7 +11261,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600px;
-  font-size: 48px;
+  font-size: 100px;
   line-height: 48px;
   letter-spacing: 0.67px;
   color: #FFFFFF;
@@ -11290,5 +11286,124 @@ header {
   max-width: 2000px;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(90deg, rgba(255, 203, 239, 0.7651435574) 0%, #ff86c1 85%);
+  background: linear-gradient(90deg, #ff86c1 15%, rgba(255, 203, 239, 0.7651435574) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact img {
+  height: auto;
+  width: 23vw;
+  position: relative;
+  right: 200px;
+  top: 50px;
+  border-radius: 30px;
+  border: 3px solid #FF86C1;
+}
+
+.form {
+  position: relative;
+  top: 50px;
+  left: 40px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 100px;
+  line-height: 48px;
+  letter-spacing: 0.67px;
+  color: #FFFFFF;
+  font-size: 6vw;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.btn-submit {
+  width: 144px;
+  height: 48px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  border: 0px solid #FF86C1;
+  box-shadow: 4px 4px 0px #FF86C1;
+  transition: 0.25s;
+  color: #FF86C1;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: 0.01s;
+}
+
+.btn-submit:active {
+  transition: 0.01s;
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px;
+}
+
+.campo {
+  padding-top: 22px;
+}
+
+.campo label {
+  display: block;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.22px;
+  color: #FFFFFF;
+  color: #5F6368;
+  font-weight: bold;
+  width: 400px;
+  border: 3px solid #FF86C1;
+  border-radius: 15px;
+  background: #FFFFFF;
+  padding: 8px 10px;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.25s;
+}
+
+.campo input, textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  display: block;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.22px;
+  color: #FFFFFF;
+  color: #343434;
+  width: 100%;
+}
+
+.campo span {
+  color: #FF86C1;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  transition: 0.25s;
+}
+
+.campo label.focus {
+  border-color: #FF86C1;
+}
+
+.campo span.focus {
+  color: #343434;
+}
+
+.campo span.top {
+  left: 15px;
+  top: -20px;
+  font-size: 12px;
+  color: #FFFFFF;
 }

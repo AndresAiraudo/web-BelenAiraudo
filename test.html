@@ -60,28 +60,38 @@
         </nav>
     </header>
     <section id="contact">
-      <form action="" method="post" id="form-cont">
+      <form action="#" method="post" id="form-cont">
           <div class="form">
-            <p class="contact'title"></p>
+            <p class="contact-title">Contact me</p>
             <div class="campo">  
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" required><span class="bar"></span>
+              <label for="name">
+                <span>Name</span>
+                <input autocomplete="off" type="text" name="name" id="name" required>
+              </label>
             </div>
             <div class="campo">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required><span class="bar"></span>
+              <label for="email">
+                <span>Email</span>
+                <input autocomplete="off" type="email" name="email" id="email" required>
+              </label>
             </div>
             <div class="campo">
-              <label for="phone">Phone</label>
-              <input type="number" name="phone" id="phone" required><span class="bar"></span>
+              <label for="phone">
+                <span>Phone</span>
+                <input autocomplete="off" type="number" name="phone" id="phone" required>
+              </label>
             </div>
             <div class="campo">
-              <label for="message">Message</label>
-              <textarea name="" id="message" cols="20" rows="4" required></textarea><span class="bar"></span>
+              <label for="message">
+                <span>Message</span>
+                <textarea autocomplete="off" name="" id="message" cols="20" rows="4" required></textarea>
+              </label>
             </div>
             <button type="submit" class="btn-submit">Send</button>
           </div>
         </form>
+        <img src="./assets/img/Fotos local de ropa/9ad9bfd7-0626-4ce4-ad56-12f72a988124_rw_1920.jpg" alt="foto-form.jpg">
     </section>
 </body>
+<script src="./js/index.js"></script>
 </html>
